@@ -1,0 +1,104 @@
+section{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.imagen__fondo{
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    z-index: -200;
+    
+}
+
+.capa__fondo{
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    background:linear-gradient(rgba(35, 35, 35, 0.416),rgba(0, 0, 0, 0.548)) ;
+    z-index: -100;
+}
+
+
+.imagen__fondo-img{
+    height: 100%;
+    width: 100%;
+}
+
+.borde{
+    border-left:  1px solid rgb(0, 0, 0);
+    width:6%;
+    height: 71vh;
+    background: linear-gradient(rgba(35, 35, 35, 0.416),rgba(0, 0, 0, 0.583));
+
+}
+
+
+.contenedor__ampliarInfo{
+    
+    height: 80%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ampliarInfo__reproductor{
+display: none; 
+z-index: 100;
+position: absolute;
+top: 0;
+height: 95vh;
+width: 100%;
+position: fixed;
+
+}
+
+.ampliarInfo__reproductor-activado{
+    display: block; 
+}
+
+.ampliarInfo__reproductor video{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.ampliarInfo__foto{
+    width: 32%;
+    margin-left: 5%;
+    height: 100%;
+    
+}
+
+.ampliarInfo__foto img{
+    border-radius: 1%;
+    box-shadow: 20px 0px 40px #000;
+
+}
+
+.ampliarInfo__detalles{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 8%;
+    margin-left: 15%;
+    color: aliceblue;  
+
+}
+
+.ampliarInfo__trailer{
+    width: 25%;
+    margin: auto;
+    margin-left: 5%;
+
+    
+}
+
+.ampliarInfo__trailer i{
+
+font-size: 100px;
+color: aliceblue;
+}

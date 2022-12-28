@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../assets/styles/index_cuerpo.css">
+    <link rel="stylesheet" href="../assets/styles/amplairInfo_cuerpo.css">
+
     <link rel="stylesheet" href="../assets/styles/footer.css">
     <title>Document</title>
 
 </head>
+
 <body>
 
     <div class="contenedor">
@@ -59,45 +62,97 @@
 
 
         </div>
+        <section class="seccion">
+
+            <div class="capa__fondo">
 
 
-        <footer>
-            <div class="logo">
-                <img class="mt-3"
-                    src="https://archivos.cinecolombia.com/cineco-cms-frontend/1.0.94/dist/images/logo_cineco_blue.svg"
+            </div>
+
+
+            <div class="imagen__fondo">
+
+                <img id="imagen__fondo" class="imagen__fondo-img"
+                    src="https://firebasestorage.googleapis.com/v0/b/livtiendatcc.appspot.com/o/bannerCine%2Fbanner%20avatar.jpg?alt=media&token=802192f8-a385-47c1-8f39-00d2627fed2a"
                     alt="">
             </div>
+            <div class="contenedor__ampliarInfo">
 
-            <div class="informacion">
-                <div class="enlaces mt-3">
-                    <a href="">Información Legal</a>
-                    <a href="">Acerca de Cineco</a>
-                    <a href="">Contáctanos PQRS</a>
-                    <a href="">Preguntas Frecuentes</a>
+                <div class="ampliarInfo__reproductor" id="reprocutorParaActivar">
+                    <video controls class="trailer" id="video">
+                        <source 
+                            src="https://firebasestorage.googleapis.com/v0/b/livtiendatcc.appspot.com/o/trailersCine%2FAvatar%202_%20El%20Camino%20Del%20Agua%20(2022)%20Tr%C3%A1iler%20Oficial%20Espa%C3%B1ol%20Latino.mp4?alt=media&token=a1a3f19c-a8a1-4069-8547-1341c09479cc"
+                            type="video/mp4">
+                    </video>
                 </div>
-                <div class="org text-center d-block mt-5
-            ">
-                    <p>© 2022 Cine Colombia</p>
+
+
+                <div class="ampliarInfo__foto">
+                    <img id="foto" src="https://firebasestorage.googleapis.com/v0/b/livtiendatcc.appspot.com/o/CARATULACINE%2Favatar%20caratula.png?alt=media&token=7bdbd69a-f674-43d4-92ed-9f78deca9937"
+                        alt="">
                 </div>
+                <div class="ampliarInfo__detalles">
+                    <h2  id="nombre" class="detalles__nombre">Avatar:El camino del agua</h2>
+                    <h4 id="nombreIngles">avatar:the way of water</h4>
+                    <h6 id="estreno">14-dic-2022</h6>
+                    <p id="genero">aventura</p>
+                    <button id="edad">mayores 12 años</button>
+                    <button id="duracion">192 Min</button>
+
+                </div>
+
+                <div class="ampliarInfo__trailer">
+                    <i id="reproductor" class="bi bi-play-circle"></i>
+                </div>
+
             </div>
 
-            <div class="siguenos text-center mt-3">
+            <div class="borde">
 
-                <h6>
-                    Siguenos en redes sociales
-                </h6>
-                <div class="enlace">
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
             </div>
 
-        </footer> 
+        </section>
     </div>
-    
+
+
+    <footer>
+        <div class="logo">
+            <img class="mt-3"
+                src="https://archivos.cinecolombia.com/cineco-cms-frontend/1.0.94/dist/images/logo_cineco_blue.svg"
+                alt="">
+        </div>
+
+        <div class="informacion">
+            <div class="enlaces mt-3">
+                <a href="">Información Legal</a>
+                <a href="">Acerca de Cineco</a>
+                <a href="">Contáctanos PQRS</a>
+                <a href="">Preguntas Frecuentes</a>
+            </div>
+            <div class="org text-center d-block mt-5
+            ">
+                <p>© 2022 Cine Colombia</p>
+            </div>
+        </div>
+
+        <div class="siguenos text-center mt-3">
+
+            <h6>
+                Siguenos en redes sociales
+            </h6>
+            <div class="enlace">
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    </div>
+
 
     <script src="../controllers/infoPelicula.js" type="module"></script>
 
 </body>
+
 </html>
