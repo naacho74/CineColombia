@@ -1,8 +1,5 @@
-
 export function pintarPeliculas(peliculasAPintar, fila) {
-
     fila.innerHTML = '';
-
     peliculasAPintar.forEach(peli => {
         let tarjeta = document.createElement('div');
         tarjeta.classList.add('tarjeta');
@@ -25,10 +22,6 @@ export function pintarPeliculas(peliculasAPintar, fila) {
         let minutos = document.createElement('button');
         minutos.textContent = peli.duracion;
 
-
-
-
-
         fila.appendChild(tarjeta);
         tarjeta.appendChild(foto);
         tarjeta.appendChild(detalles);
@@ -43,25 +36,14 @@ export function pintarPeliculas(peliculasAPintar, fila) {
 
         function ampliarInfo(evento) {
             let nombrePeliculaSeleccionada = evento.target.parentElement.querySelector('h2').textContent;
-
             return nombrePeliculaSeleccionada;
-
         }
 
         tarjeta.addEventListener('click', (evento) => {
-
-
           let peliculaSeleccionada= ampliarInfo(evento)
             window.location.href='./views/infoPelicula.html'
             sessionStorage.setItem('pelicula',peliculaSeleccionada)
         })
-
-
     })
-
-
-
-
-
 }
 
