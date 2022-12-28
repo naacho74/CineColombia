@@ -1,0 +1,49 @@
+footer{
+    padding: 0 2%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo img{
+    width: 70%;
+}
+
+.informacion{
+    width:60%;
+    display: block;
+}
+
+.informacion a{
+    padding:0 2%;
+    text-decoration: none;
+  
+    color: rgb(33, 31, 31);
+}
+
+.informacion a:nth-child(2),.informacion a:nth-child(3), .informacion a:last-child{
+    border-left: 1px solid black;
+}
+
+.siguenos{
+    width: 20%;
+
+}
+
+footer .enlace{   
+display: flex;
+width: 40%;
+justify-content: center;
+margin: auto;
+
+}
+
+.enlace a {
+text-decoration: none;
+margin: auto;
+color: black;
+}
